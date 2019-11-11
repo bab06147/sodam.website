@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/css2.css">
+
+    <title>SODAM</title>
+</head>
+<body> 
+    
+    <div class="main-logo">
+             <a href="#" class="top"><img src="img/main-logo.png" alt=""></a> 
+          </div>
+<div class="suv-wrap">
+      <div class="suv-logo">
+        <img src="img/logo.png" alt="">
+    </div>
+</div>
+  <header>
+      <nav>
+  
+          <ul> 
+            <a href="#p1" onclick="j_test(0)"><li>ABOUT </li></a> 
+            <a href="#p2" onclick="j_test(1)"><li> PRODUCT </li></a> 
+           <a href="#p3" onclick="j_test(2)"><li> APP </li></a>
+           <a href="#p4" onclick="j_test(3)"><li> CONTACT </li></a>
+          </ul>
+      </nav>
+  </header>
+
+<!--<section class="main-bn">
+    <div class="rolling-bn">
+
+    </div>
+</section>-->
+
+<div class="slider">
+    <div class="slide_viewer">
+      <div class="slide_group">
+        <div class="slide">
+        </div>
+        <div class="slide">
+        </div>
+        <div class="slide">
+        </div>
+      <!--  <div class="slide">
+        </div>-->
+      </div>
+    </div>
+  </div><!-- End // .slider -->
+  
+  <!--<div class="slide_buttons">
+  </div>-->
+  
+  <div class="directional_nav">
+    <div class="previous_btn" title="Previous">
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="80px" height="80px" viewBox="-11 -11.5 65 66">
+        <g>
+          <g>
+            <path fill="#474544" d="M-10.5,22.118C-10.5,4.132,4.133-10.5,22.118-10.5S54.736,4.132,54.736,22.118
+              c0,17.985-14.633,32.618-32.618,32.618S-10.5,40.103-10.5,22.118z M-8.288,22.118c0,16.766,13.639,30.406,30.406,30.406 c16.765,0,30.405-13.641,30.405-30.406c0-16.766-13.641-30.406-30.405-30.406C5.35-8.288-8.288,5.352-8.288,22.118z"/>
+            <path fill="#474544" d="M25.43,33.243L14.628,22.429c-0.433-0.432-0.433-1.132,0-1.564L25.43,10.051c0.432-0.432,1.132-0.432,1.563,0	c0.431,0.431,0.431,1.132,0,1.564L16.972,21.647l10.021,10.035c0.432,0.433,0.432,1.134,0,1.564	c-0.215,0.218-0.498,0.323-0.78,0.323C25.929,33.569,25.646,33.464,25.43,33.243z"/>
+          </g>
+        </g>
+      </svg>
+    </div>
+    <div class="next_btn" title="Next">
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="80px" height="80px" viewBox="-11 -11.5 65 66">
+        <g>
+          <g>
+            <path fill="#474544" d="M22.118,54.736C4.132,54.736-10.5,40.103-10.5,22.118C-10.5,4.132,4.132-10.5,22.118-10.5	c17.985,0,32.618,14.632,32.618,32.618C54.736,40.103,40.103,54.736,22.118,54.736z M22.118-8.288	c-16.765,0-30.406,13.64-30.406,30.406c0,16.766,13.641,30.406,30.406,30.406c16.768,0,30.406-13.641,30.406-30.406 C52.524,5.352,38.885-8.288,22.118-8.288z"/>
+            <path fill="#474544" d="M18.022,33.569c 0.282,0-0.566-0.105-0.781-0.323c-0.432-0.431-0.432-1.132,0-1.564l10.022-10.035 			L17.241,11.615c 0.431-0.432-0.431-1.133,0-1.564c0.432-0.432,1.132-0.432,1.564,0l10.803,10.814c0.433,0.432,0.433,1.132,0,1.564 L18.805,33.243C18.59,33.464,18.306,33.569,18.022,33.569z"/>
+          </g>
+        </g>
+      </svg>
+    </div>
+  </div><!-- End // .directional_nav -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<!--
+<section>
+
+        <div href="#" id="bannerDiv">
+            <div class="banners">
+                <img src="img/home2.png" alt="">
+                <img src="img/home2.jpg" alt="">
+                <img src="img/home3.jpg" alt="">
+            </div>
+        </div>
+    </section>
+-->
+<section>
+    <div class = "overview">
+        <div>
+                <div class = "overview_title">
+                        <span class="about">OVERVIEW</span>
+                </div>
+                <div class = "overview_text">
+                        현재의 패키지 시장의 트렌드는 1인 가구에 발맞춰 간편한 혼합 양념장이나 소포장 같은 다양한 <br>
+        형태로 출시 되고 있습니다. 하지만 국내 소스 시장은 전통적이고 투박한 패키지 디자인을 <br>
+        출시하고 있습니다. <br> <br>
+
+        이러한 상황 속에서 소담은 어떻게 고객에게 새롭게 다가갈지 끊임없이 고민하였고  소담만의 <br>
+       키 비주얼로, 젊 고 신선한 패키지를 선사하고자 하였습니다.
+                </div>
+        </div>
+    </div> 
+    
+    <div class = "overview-two">
+        <div>
+          <div>
+          한국 문화를 홍보하며 <br>
+          신선하게 다가가는 <br>
+          전통장 패키지 브랜드 <span>소담</span> 
+        </div>
+      </div>
+    </div>
+
+    <div class="slogun">
+        <div class="Sg-title">
+            <span class="Sg-bold">“小膽”</span> <span>만의 <br>
+             아담하고 <br>
+             트렌디한 한입</span>
+             </div>
+         <div class ="wrap_wrap_wrap">
+            <div class="ll">
+                소담은
+            </div>
+
+            <div class="Sg-suv-wrap">         
+                <div class="Sg-suv-1">
+                <img src="img/arrow.png" alt="">
+                한식의 먹음직스러움과 <br>
+                소포장 디자인의 의미를 <br>
+                함축하고 있습니다.
+                </div>
+            
+                <div class="Sg-suv-2">
+                <img src="img/arrow.png"  alt="">
+                한국 양념장의 이미지를 <br>
+                현대적으로 재해석한<br>
+                트렌디함을 강조합니다.
+                </div>
+            
+                <div class="Sg-suv-3">
+                <img src="img/arrow.png"  alt="">    
+                나만의 라이프 스타일을 <br>
+                전 세계인들과 만들어 나갑니다.
+                </div>
+         </div>
+        </div>
+      </div> 
+      <div class = "overview2">
+          <div>
+                  <div class = "overview_title2">
+                          <span class="about"> Project Goal</span>
+                  </div>
+                  <div class = "overview_text2">
+                          먹음직스럽고 아담하다는 뜻의 '소담'은 한국의 전통적인 이미지를 젊고 트렌디한 패키지 디자인으로 재해석 <br>하여 고급스럽고 현대적인 룩을 표현하고자 하였습니다. 
+                  </div>
+          </div>
+          <div class = "overview_img2">
+              <img src="img/Pj-goal.PNG" alt="">
+          </div>
+        </div> 
+
+
+        <section class="overview3">
+            <div class="overview_wrap3">
+                <div class="overview_title3">
+                Design principle
+                </div>
+        
+                <div class="overview_text3">
+                소담은 한국의 섬세한 이미지를 패턴으로 나타내며 경쾌한 컬러를 이용한 한국 양념장, 모던하고 고급스러운 패키지를 이용하여 고객에게 <br>
+                감성적 혜택을 전달할 예정 입니다.
+                </div>
+        </div>
+        
+          <div class="overview_img3 ">
+              <img src="img/Pc-img.PNG" alt="">
+          </div>
+        </section>
+        <div class = "overview4">
+            <div>
+                    <div class = "overview_title4">
+                            <span class="about"> Logo</span>
+                    </div>
+                    <div class = "overview_text4">
+                        소담의 브랜드 심볼은 동양적인 처마와 창문에서 모티브를 얻어 제작하였으며 <br>
+                        한글과 한자의 '소담'을 합성하여 전통적인 분위기를 새롭게 환기해 내는 것을 의미합니다.
+                    </div>
+            </div>
+            <div class = "overview_img4">
+                <img src="img/Logo-img.PNG" alt="">
+            </div>
+        </div> 
+
+        <div class = "overview5">
+              <div>
+                      <div class = "overview_title5">
+                              <span class="about">  Main Color</span>
+                      </div>
+                      <div class = "overview_text5">
+                          메인 컬러로 소담 블랙, 골드,오프 화이트를 사용해 세련되고 현대적인 룩을 보여주고 트렌디한 <br>
+                          패키지 컬러 6가지로 각자의 장을 설명하하고자 하였습니다.
+                      </div>
+                      <div class = "overview_img5">
+                          <img src="img/Mc-1.PNG" alt="">
+                          <img src="img/Mc-2.PNG" alt="">
+                          <img src="img/Mc-3.PNG" alt="">
+                      </div>
+                      <div class = "overview_title5">
+                          <span class="about">  Sub Color</span>
+                      </div>
+                      <div class = "overview_text5">
+                      <img src="img/suv-color.PNG" alt style="width: 865px;">  
+                      </div>
+                      
+              </div> 
+            </div>
+            <div class = "overview6">
+                <div>
+                        <div class = "overview_title6">
+                                <span class="about">  Icon</span>
+                        </div>
+                        <div class = "overview_text6">
+                            전체적으로 로고의 특징, 선 가장자리에 원의 곡선 형태를 반영하여 소담의 아이콘을 제작하였 <br>
+            으며 위의 아이콘들은 소담의 트렌디하며 장 브랜드 아이콘이라는 점과, 장의 원료들을 기반한 <br>
+            소담을 대표하는 7가지 아이콘들 입니다.
+                        </div>
+                </div>
+            </div> 
+            <section class="overview3">
+                <div class="overview_wrap3">
+                    <div class="Ig-title">
+                    Icon Grid
+                    </div>
+            </div>
+            
+              <div class="overview_img6 ">
+                  <img src="img/Ic-grid.PNG" alt="">
+              </div>
+              <div class="overview_img6 " style="padding-bottom : 100px">
+                    <img src="img/Ic-grid2.PNG" alt="">
+              </div>
+            </section>
+
+            <div class = "overview7">
+              <div>
+                      <div class = "overview_title7">
+                              <span class="about">   Pattern</span>
+                      </div>
+                      <div class = "overview_text7"  style="padding-bottom : 100px">
+                        소담의 패턴은 로고에서 모티브를 도출해내어 타입A 에서 B로 확장하여 포장에 따라 각자 <br> 다른 사용성을 지니고 있습니다. 
+                      </div>
+              </div>
+             <div class="overview_img">
+              <img src="img/pattern.PNG" alt="">
+             </div>
+          </div> 
+
+          <section class="package">
+            <div>
+                <div class="Pouch-title">
+                    Pouch Pakage
+                </div>
+                <div class="Ph-suv">
+                        소담의 소포장은 기존적으로 항아리의 형태를 띄고 있습니다. 소담의 소포장 패키지는 한손에 <br>
+                        들어가는 크기로,  간단하게 뜯어 즐기실 수 있습니다.
+                </div>
+            </div>
+            
+            <div class="Ph-img">
+                <img src="img/Ph-img.PNG" alt="" style="margin-top : 300px; margin-bottom :300px ">
+            </div>
+            </section>
+
+            <section class="package">
+              <div>
+                  <div class="Pouch-title">
+                      Big Package
+                  </div>
+                  <div class="Ph-suv">
+                      소담 대포장은 캡을 사용해 원하는 만큼의 양을 사용하고 저장하실 수 있습니다.
+                  </div>
+              </div>
+        </div>
+        
+        <div class="Ph-img">
+            <img src="img/Bx-img.png"  alt="" style="margin-top : 300px; margin-bottom :300px ">
+        </div>
+            </section>
+
+            <section class="package">
+                <div>
+                    <div class="Pouch-title">
+                        Stick Package
+                    </div>
+                    <div class="Ph-suv">
+                        스페셜 키트로, 여행, 기내에서도 간편하게 쓰고 버릴 수 있도록 구성되어 있습니다.
+                    </div>
+                </div>
+          </div>
+          
+          <div class="Ph-img">
+              <img src="img/St-img.png" alt="" style="margin-top : 300px; margin-bottom :300px; margin-left : 10%;">
+          </div>
+              </section>
+
+              <section class="package">
+                  <div>
+                      <div class="Pouch-title">
+                          Box Package
+                      </div>
+                      <div class="Ph-suv">
+                          소담 박스 패키지는 소포장, 대포장, 스페셜 키트 총 3가지로 구성되어 있습니다.
+                      </div>
+                  </div>
+            </div>
+            
+            <div class="Ph-img">
+                <img src="./img/Bg-img.png" alt="" style="margin-top : 300px; margin-bottom :300px ">
+            </div>
+                </section>
+
+                <section class="Phone-moc">
+
+                      <div class="Pm-img">
+                        <img src="img/메인.gif" alt="">
+                    </div>
+                        <div class="Pm-wrap">
+                        <div class="Pm-title">
+                    <span class="about"> Application GUI </span>
+                        </div>
+                    
+                        <div class="Pm-suv-ti">
+                            추천상품과 함께 알아보는 <br>
+                            <span class="Pm-bold">소담의 브랜드 개요</span>
+                        </div>
+                    
+                        <div    class="Pm-suv">
+                            앱을 실행했을때 켜지는 개요 페이지 입니다. <br>
+                            소담이 어떤 브랜드 인지 간략하게 설명 하여 고객에게 인식시키고 그에 맞는 <br>
+                            패키지 디자인과 무드보드를 롤링 배너로 보여줍니다.
+                        </div>
+                        <div class="top-write">
+                            <img src="img/main-logo.png" alt="">  
+                            <div class="top-suv">
+                        상단에 위치한 소담 로고를 누르면 <br>
+                        메인으로 돌아오게 됩니다.
+                            </div>
+                        </div>
+                      
+                    </div>
+                    
+                    </section>
+                    
+                    <section class="Phone-moc2">
+                    
+                    <div class="Pm-img2">
+                        <img src="img/쇼핑.gif" alt="">
+                        <img src="img/stick-shop.png">
+                    </div>
+                    
+                    <div class="P2-wrap">
+                    <div class="P2-title">
+                            나만의 장을 트렌디하게 <br>
+                             <span class="P2-bold"> 소담 쇼핑으로</span>
+                    </div>
+                    <div class="P2-suv">
+                            상품의 상세 페이지 입니다. 소담의 패키지를 개별로 <br>
+                            확인하여 원하는 상품을 고르고 구매할 수 있습니다.
+                    </div>
+                    </div>
+                    </section>
+                    
+                    <section class="recipe">
+                      <div class="Pm-img3">
+                            <img src="img/레시피2.gif" alt="">
+                            <img src="img/레시피.gif" alt="">
+                      </div>
+                          <div class="Pm-wrap-3">
+                            <div class="Pm-inwrap">
+                              <div class="Pm-title-3">
+                                  내손으로 만든 <br>
+                                  <span class="Pm-bold">소담 레시피</span>
+                              </div>
+                                
+                              <div    class="Pm-suv-3">
+                                나만의 레시피 페이지입니다. <br>
+                                  소담에서 당신만의 레시피를 <br>
+                                  작성하여 저장, 공유해보세요.
+                              </div>
+                        </div>
+                    </div>
+                    </section>
+                    
+                    <section class="video">
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+                    
+                    <div class="wrapper">
+                    <br><br><br><br><br><br><br><br><br><br><br><br><h1>Trandy Bite_SODAM</h1>
+                    
+                            <video class="video">
+                                <source src="img/25.소담_영상.mp4" type="video/mp4" />
+                            </video>
+                          <div class="playpause"></div>
+                        </div>
+                    </section>
+                    
+                    <section class="Team">
+                        <div class="name">
+                                <span class="about"> Team_SODAM </span>
+                        </div>
+                    
+                        <div class="pic">
+                            <img src="img/정효리.png" alt="">
+                            <img src="img/양은화.png" alt="">
+                            <img src="img/조인혜.png" alt="">
+                            <img src="img/신재연.png" alt="">
+                            <img src="img/지동환.png" alt="">
+                        </div>
+                    
+                    </section>
+                    
+                    <footer class="footer">
+                        <div>
+                                Copyright © 2019. All rights reserved. SODAM of Art and Design.
+                        </div>
+                    </footer>
+        
+</section>
+
+
+</footer>
+<script>
+
+     function j_test(n){
+         $('html, body').stop().animate({
+             scrollTop : $('section span.about').eq(n).offset().top
+         });
+     }
+ </script>
+<script src="js/js.js"> </script>
+</body>
+</html>
